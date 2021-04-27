@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Funções</h1>
+    <script>
+
+        // Declaração de Funções
+        function ola(){
+            document.write("ola mundo")
+
+        }
+         ola()
+
+        //Expressao de função
+        const ola2 = function () {
+            console.log("ola mundo de functon expression")
+        }
+        ola2()
+
+        // Arrow Functions
+        const ola3 = () => {
+            console.log("ola mundo de Arrow Functions")
+        }
+        ola3()
+
+        // Retorno de Valores
+        function obtemDiaSemana(){
+            return new Date().getDay()
+        }
+        console.log(obtemDiaSemana())
+
+        function somar(n1 = 0, n2 = 0){
+            // let _n1 = n1 || 0
+            // let _n2 = n2 || 0
+            return n1 + n2
+        }
+        let soma = somar(3, 5)
+        console.log(soma)
+        console.log(somar(10))
+        console.log(somar())             
+
+        
+
+
+    </script>
+    
+</body>
+</html>
