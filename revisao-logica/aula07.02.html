@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+    </body>
+    
+    <script>
+        
+        var msg = "";
+
+        var daniel = {
+            nome: 'Daniel',
+            sobrenome: 'Tapias Morales',
+            rg: '081.958.071',
+            tel: '34-988045273'
+        }
+
+        for (propriedade in daniel){
+
+            console.log(propriedade, ': ' , daniel[propriedade])
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+        
+        
+    </script>
+</html>

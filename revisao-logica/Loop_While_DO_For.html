@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+
+
+    <h1>Lógica de Programação com JavaScript - Tabuada</h1>  <br><hr>
+
+
+<script>
+    var numero = prompt('Digite um numero');
+    numero = parseFloat(numero)
+
+    //______________________________LOOP While________________________________________________________________
+    var indice = 0;
+
+    while(indice <= 1000){
+        document.write(numero + ' x ' + indice + ' = ' + (indice * numero) + '<br>');
+
+        if(indice % 10 === 0 && indice > 0){
+            document.write('<hr>')
+        }
+        indice = indice + 1;
+    }
+
+    document.write('saiu do loop');
+
+
+    //_______________________________LOOP DO__________________________________________________________________
+
+        /*var indice = 1001;
+
+        do{
+            document.write(numero + ' x ' + indice + ' = ' + (indice * numero) + '<br>');
+
+            indice = indice + 1;
+        } while(indice <= 1000)
+        document.write('saiu do loop')*/
+        
+
+
+    //______________________________LOOP FOR___________________________________________________________________
+
+    /*for(var i = 1; i <= 1000; i++ ){
+        document.write(numero + ' x ' + i + ' = ' + (numero * i) + '<br>');
+
+    }
+
+    document.write('saiu do loop')*/
+
+
+</script>
+
+</body>
+</html>

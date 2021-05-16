@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+    </body>
+    
+    <script>
+        
+    function Endereco (log, n, cep){
+        this.logradouro = log
+        this.n = n
+        this.cep = cep
+
+        this.enderecoCompleto = function(){
+            return this.logradouro + ', ' + this.n;
+        }
+    }
+    
+    var endereco1 = new Endereco('rua 15', 485, "38441-184")
+    var endereco2 = new Endereco('rua palmas', 148, "38440-100")
+
+    console.log(endereco1.enderecoCompleto())
+        
+    </script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="input">
+<button class="button" id="botao" >Enviar</button>
+
+<Script>
+//desabilita o botão no início
+document.getElementById("botao").disabled = true;
+
+//cria um event listener que escuta mudanças no input
+document.getElementById("input").addEventListener("input", function(event){
+
+  //busca conteúdo do input
+    var conteudo = document.getElementById("input").value;
+
+    //valida conteudo do input 
+    if (conteudo !== null && conteudo !== '') {
+      //habilita o botão
+      document.getElementById("botao").disabled = false;
+    } else {
+      //desabilita o botão se o conteúdo do input ficar em branco
+      document.getElementById("botao").disabled = true;
+    }
+});
+
+</Script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Array</title>
+</head>
+<body>
+    <h1>Lógica de Programação com JavaScript - Array - Armazenando Objeto - Aula 4</h1>  <br><hr>
+
+    <div id="output"></div>
+   
+    </body>
+
+    <script>
+
+        var produtos = [
+            {"nome": "caneta", "preco": 2},
+            {"nome": "Lapis", "preco": 1.2},
+            {"nome": "borracha", "preco": 0.5}
+        ];
+
+        var msg = "";
+
+        for(var i = 0; i < produtos.length; i++){
+            console.log(produtos[i].preco);
+
+            msg += "<h2>Produto: "+ produtos[i].nome + "<h2>";
+            msg += "<p>Preço: R$ " + produtos[i].preco + "</p>";
+        }
+
+        document.querySelector('#output').innerHTML = msg;
+       
+
+    </script>
+
+
+</html>

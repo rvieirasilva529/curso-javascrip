@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+    </body>
+    
+    <script>
+        
+    function dizBla(n){
+       // var msg = '';
+       // while(n --){
+       //     msg += ' bla'
+       // }
+       // return msg;
+
+       return (n > 1)? dizBla(--n) + ' bla' : 'bla';
+
+    }
+
+    console.log(dizBla(2));
+    console.log(dizBla(5));
+
+        
+    </script>
+</html>

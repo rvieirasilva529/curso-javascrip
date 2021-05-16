@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Impar</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Jogo do Par ou Impar</h1>
+    <p>Digite um número de 0 a 5
+    <input type="number" id="meuNumero" min="0" max="5"></p>
+    <label><input type="radio" name="opcao" value="par" checked>Par</label><br>
+    <label><input type="radio" name="opcao" value="impar" checked>Impar</label><br><br>
+    <button onclick="jogar()">Jogar</button>
+    
+    <script>
+
+        var nComputador = '';
+        var nJogador = '';
+        var minhaEscolha = '';
+
+        function sortear(max){
+            return Math.floor(Math.random() * max);
+        }
+        function jogar(){
+            nJogador = document.querySelector('#meuNumero').value
+            nComputador = sortear(5);
+            minhaEscolha = document.querySelector('input[type="radio"]:checked').value
+            console.log('minhaEscolha', minhaEscolha)
+            if(!nJogador){
+                alert('Primeiro digite um numero');
+                return;
+            }
+
+            nJogador = parseFloat(nJogador);
+
+            var total = nJogador + nComputador;
+
+            var resultado = (total % 2 === 0) ? 'Par' : 'Impar';
+
+            verificarResultado(resultado)
+
+           function verificarResultado(resultado){
+               if(minhaEscolha === resultado){
+                    alert('Eu ganhei')
+               } else {
+                   alert('O Computador ganhou');
+               }
+           }          
+           console.log('nJogador', nJogador);
+           console.log('nComputador', nComputador);
+        }
+
+    </script>
+
+
+</body>
+</html>
