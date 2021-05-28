@@ -7,4 +7,3 @@ const teste = function teste(){
 }
 
 teste()
-

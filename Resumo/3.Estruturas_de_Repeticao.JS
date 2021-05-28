@@ -58,7 +58,7 @@
 
 //******* Loops Infinitos ocorrem quando a condição que está sendo testada nunca se torna verdadeira
 // let count = 0;
-// while(count <10){
+// while(count < 10){
 //     console.log(count);
 // }
 //********O exemplo acima imprime "0" infinatamente porque nunca é incrementado *******
@@ -110,11 +110,21 @@
 //     console.log(i);
 // }
 // // OU
+
 // for(let i = 1; i <= 40; i++){
 //     if(i % 2 == 0){
 //         console.log(i);
 //     }
 // }
+// ===============Exemplo abaixo quando for teste de desafios========
+// var valor = 0;
+// valor = gets();
+
+// for(let i = 1; i <= valor; i++){
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
+// };
 
 // //** Imprima todos os numeros impares entre 300 e 333. usando o for loop */
 // for(let i =  301; i <= 333; i += 2){
